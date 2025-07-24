@@ -1,108 +1,116 @@
 # 🧠 Mental Health in Students Post-COVID: A Silent Crisis?
 
-> A comprehensive exploratory data analysis (EDA) notebook revealing patterns, signals, and hidden truths about students' mental health post the COVID-19 pandemic.
-
----
-
 ## 📌 Project Overview
 
-In the wake of the COVID-19 pandemic, mental health concerns among students have grown significantly. This project explores a rich dataset to uncover insights into depression, anxiety, suicidal thoughts, and more across variables like gender, age, degree type, study hours, sleep, and living environment.
-
-This isn't just a plot-heavy notebook. The aim is to **narrate real stories through data**, highlight **vulnerable student groups**, and start **conversations around psychological well-being in academia**.
+The COVID-19 pandemic brought major disruptions across the globe, but among the most silent and deeply felt effects has been the toll on students’ mental health. This project dives into analyzing various mental health indicators and behavioral patterns in students post-COVID.
 
 ---
 
-## 🔍 Key Objectives
+## 🎯 Objective
 
-- Identify demographic groups most affected by depression and anxiety.
-- Analyze correlations between study hours, sleep patterns, and mental health issues.
-- Understand how degree types and academic stress influence psychological well-being.
-- Present findings in a visually intuitive and engaging manner using `matplotlib` and `seaborn`.
+- Understand how mental health was impacted across different age groups, genders, and academic pressures.
+- Investigate the relationship between depression, suicidal thoughts, and academic/daily lifestyle factors.
+- Draw actionable insights from real survey data to highlight at-risk groups.
 
 ---
 
-## 📁 Repository Structure
+## 🗂️ Folder Structure
 
 ```
-📦mental-health-students-post-covid
- ┣ 📈 datasets\                      # Datasets used
-   ┣ 📄 final_depression_dataset_2.xlsx
-   ┣ 📄 student_depression_dataset.xlsx
-┣ 📃 README.md                     # This file
-┣ 📊 Mental_Health_in_Students_Post_COVID_EDA.ipynb       # Main notebook with all analysis
-post_covid_mental_health_cleaned.xlsx    #Cleaned Dataset Used for EDA 
- 
+datasets\
+    # Used Datasets
+post_covid_mental_health_cleaned.xlsx
+Mental_Health_in_Students_Post_COVID_EDA.ipynb
 ```
 
 ---
 
-## 🧰 Technologies Used
+## 📊 Dataset Details
 
-- **Python 3**
-- **Pandas** – data wrangling and manipulation
-- **Matplotlib & Seaborn** – data visualization
-- **Jupyter Notebook / Kaggle** – interactive coding
-- **GitHub + Kaggle Integration** – synced live for updates
+The dataset contains the following columns:
 
----
+- **Gender**
+- **Age**
+- **City**
+- **Academic Pressure**
+- **CGPA**
+- **Study Satisfaction**
+- **Sleep Duration**
+- **Dietary Habits**
+- **Degree**
+- **Suicidal Thoughts**
+- **Study Hours**
+- **Financial Stress**
+- **Family History of Mental Illness**
+- **Depression**
 
-## 📊 Exploratory Data Analysis (EDA) Highlights
-
-- **Demographics Analysis**: Gender distribution, age patterns, and living conditions.
-- **Mental Health Breakdown**:
-  - Countplots showing depression and suicidal thoughts by age and gender.
-  - Top 20 degrees with highest percentage of reported depression.
-- **Study & Sleep Analysis**: Sleep hours vs Study hours vs Depression correlation.
-- **Interactive Subplots** and **custom annotations** for storytelling through visuals.
-
----
-
-## 📌 Current Status
-
-- ✅ Dataset cleaned & preprocessed
-- ✅ Initial EDA and visualizations
-- ⏳ Advanced analysis in progress (correlation matrix, clustering, predictive modeling)
-- 🔄 Notebook actively updated as more insights are added
+Source: Survey datasets related to mental health post-COVID
 
 ---
 
-## 📈 Sample Plot
+## 🧼 Data Preprocessing
 
-![sample_plot](assets/age_vs_depression_suicidal.png)
-
-> Example: Age group with highest depression and suicidal thoughts.
-
----
-
-## 💡 Future Work
-
-- Introduce ML models to predict depression risk
-- Build an interactive dashboard using `Plotly` or `Streamlit`
-- Create a mental health risk score for students
-- Expand dataset with public sources and surveys
+- Converted categorical data to numerical for modeling (e.g., Healthy = 2, Moderate = 1, Unhealthy = 0)
+- Cleaned duplicated or inconsistent data entries (`Class 12` and `Class 12` merged)
+- Mapped values for binary responses like `Yes/No` → `1/0`
+- Removed or imputed missing values
 
 ---
 
-## 🤝 Contributions
+## 📈 Exploratory Data Analysis (EDA)
 
-If you want to improve this project (e.g., add new datasets, suggest visual improvements, apply ML models), feel free to:
-- Fork this repo
-- Make your changes
-- Submit a pull request
+Key EDA activities included:
 
----
+- **Demographic Distributions** — Age, Gender-wise Depression and Suicidal Thoughts
+- **Top Degrees vs Depression Rates** — Visualized top 20 degrees with highest percentage of depressed students
+- **Daily Habits** — Sleep duration, dietary habits, and their correlation with mental health
+- **Academic Pressure & Satisfaction** — Observed mental health variations across satisfaction and pressure levels
+- **Financial Stress & Family History** — Understanding external and inherited factors
 
-## 📜 License
+Graphs used:
 
-This project is licensed under the **MIT License** – feel free to use, modify, and distribute with credit.
+- Countplots
+- Barplots with annotations
+- Grouped Percentage Charts
 
----
-
-## 📬 Contact
-
-> **Danish Shaikh**  
-> [LinkedIn]([https://linkedin.com/in/danishshaikh](https://www.linkedin.com/in/danish-shaikh-b6442a212/)) | [Kaggle]([https://kaggle.com/yourusername](https://www.kaggle.com/danishshaikh18)) | [GitHub]([https://github.com/yourusername](https://github.com/DanishShaikh18))
+All plots were styled for clarity, professionalism, and storytelling.
 
 ---
 
-> _"Let’s use data not just for insight, but for impact."_ 💬
+## 📌 Insights & Observations
+
+- Students aged **21** had the highest number of depression cases.
+- Depression was significantly higher among students with high academic pressure and low study satisfaction.
+- Some degrees (e.g., `B.Tech`, `MBBS`) showed over **50%+** depression rates.
+- Students getting < 6 hours of sleep and unhealthy diets were more likely to report suicidal thoughts.
+
+---
+
+## 📘 Tools Used
+
+- Python (Pandas, Seaborn, Matplotlib, NumPy)
+- Jupyter Notebook
+- Excel for cleaned output
+
+---
+
+## 💾 Output Files
+
+- `Mental_Health_in_Students_Post_COVID_EDA.ipynb` — All analysis & visualizations
+- `post_covid_mental_health_cleaned.xlsx` — Cleaned dataset for reuse
+
+---
+
+## 🔗 Important Links
+
+- 🔗 [LinkedIn - Danish Shaikh](https://www.linkedin.com/in/danish-shaikh-b6442a212/)
+- 📊 [Kaggle Profile](https://www.kaggle.com/danishshaikh18)
+- 💻 [GitHub Profile](https://github.com/DanishShaikh18)
+
+---
+
+## 🙌 Final Note
+
+This project aims to bring attention to a problem that's often overlooked but critical — the mental well-being of our future generation. As we visualize the silent crisis post-pandemic, let’s ensure our solutions aren’t silent.
+
+> "Mental health is not a destination, but a process. It's about how you drive, not where you're going."
