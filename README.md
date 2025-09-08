@@ -1,14 +1,14 @@
 # 🧠 Mental Health in Students Post-COVID: A Silent Crisis 
   📊 An Exploratory Data Analysis of 16,000+ Students
 
---- 
+
 
 ## 📌 Project Overview
 
 The COVID-19 pandemic disrupted education systems worldwide, but one of the most silent crises has been the toll on students’ mental health.
 This project leverages real survey data (16k+ students) to explore depression, suicidal thoughts, and lifestyle/academic stressors affecting students post-COVID.
 
----
+
 
 ## 🎯 Business & Research Objective
 
